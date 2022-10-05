@@ -46,15 +46,11 @@ const dinner = {
   shuffle(array: any[]) {
     return array.sort(() => Math.random() - 0.5);
   },
-  randompick(array: any[]) {
-    return array[Math.floor(Math.random() * array.length)];
-  },
-
   organize(array: any[]) {
     this.shuffle(array);
-    this.randompick(this.pick);
+    this.shuffle(this.pick);
     const dinnerMember = array.map((member) => member.name);
-    console.log(`결과 -> ${dinnerMember[0]}, ${dinnerMember[1]}는 ${this.pick[0]}과 ${this.pick[1]} 둘다 냠냠 드세요^^`);
+    console.log(`결과 -> ${dinnerMember[0]}, ${dinnerMember[1]}는 ${this.pick[0]}을 드세요^^`);
   },
 };
 
