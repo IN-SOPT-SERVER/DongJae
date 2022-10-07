@@ -5,8 +5,9 @@
 2. organize 내부 로직 채우기
 
 */
+import Dinner from "./interface/Dinner";
 
-const dinner = {
+const dinner: Dinner = {
   member: [
     {
       name: "권세훈",
