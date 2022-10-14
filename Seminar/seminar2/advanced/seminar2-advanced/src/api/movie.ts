@@ -1,7 +1,6 @@
 // src/api/movie.ts
 
 import express, { Request, Response, Router } from "express";
-import { monitorEventLoopDelay } from "perf_hooks";
 // express 모듈에서 express, (request, response, router)-> 타입 정의를 위해 불러옴!
 
 const router: Router = express.Router();
