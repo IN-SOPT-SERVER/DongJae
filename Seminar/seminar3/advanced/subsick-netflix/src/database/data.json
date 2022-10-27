@@ -2,6 +2,8 @@
     "1": {
       "seriesId": 1,
       "title": "수리남",
+      "toMyList": false,
+      
       "time": {
         "runningTime": 62,
         "watchTime": 30
@@ -24,6 +26,7 @@
     },
     "2": {
       "seriesId": 2, 
-      "title": "마이네임"
+      "title": "마이네임",
+      "toMyList": false
     }
   }
