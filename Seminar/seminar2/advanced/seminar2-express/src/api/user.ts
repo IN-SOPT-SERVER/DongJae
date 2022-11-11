@@ -5,9 +5,8 @@ import express, { Request, Response, Router } from "express";
 
 const router: Router = express.Router();
 
-const user = "하이";
-
 router.get("/", (req: Request, res: Response) => {
+  const user = "동재";
   return res.status(200).json({
     status: 200,
     message: "유저 조회 성공",
