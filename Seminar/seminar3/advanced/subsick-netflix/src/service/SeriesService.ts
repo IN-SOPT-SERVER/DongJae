@@ -5,7 +5,7 @@ const getSeries = async (seriesId: string) => {
 };
 
 const toMyList = async (seriesId: string) => {
-    
+
     data[seriesId].toMyList = true;
     
     return data[seriesId];

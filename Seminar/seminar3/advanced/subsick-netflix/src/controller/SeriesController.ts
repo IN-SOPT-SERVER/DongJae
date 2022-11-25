@@ -49,7 +49,7 @@ const toMyList = async (req: Request, res: Response) => {
         return res.status(404).json({
             status: 404, message: "NOT_FOUND"});
     }
-
+    
     return res.status(200).json({status: 200, message: "찜 취소 성공", data});
 };
 
@@ -62,13 +62,6 @@ const toMyList = async (req: Request, res: Response) => {
     const { seriesId } = req.params;
     const { evalId } = req.body;
     
-    // interface EvalResponse {
-    //     evalId: string;
-    // };
-
-    // const responseData: EvalResponse = {
-    //     evalId: req.body.evalId
-    // };
     
     const data = await SeriesService.createEval(seriesId, evalId);
 
